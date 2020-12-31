@@ -32,7 +32,8 @@ Our goal was to predict the transcoding time using 20 features. We followed the 
   
   4. Flask
   
-  5. Scikit-learn version 0.21.3 -> Do a "pip install scikit-learn==0.21.3". This is **really important** since our training was done on that version (the version on our PC) and there has been some changes since that version, so installing the latest version will break our code.
+  5. Scikit-learn version 0.21.3 -> Do a "pip install scikit-learn==0.21.3". 
+    * This is **really important** since our training was done on that version (the version on our PC) and there has been some changes since that version, so installing the latest version will break our code.
   
   6. Seaborn
   
