@@ -86,3 +86,12 @@ not due to overfitting just because of the context of our dataset :
 - => Generally, when it comes to transcoding, there's not really any magic behind it. Meaning, that for the same settings we will
 most likely always get the same / very close transcoding time. This differs from predicting the price of a house for example
 (Boston dataset), our dataset here seems log
+
+Here are the final hyperparameters for our chosen model : 
+
+- BaggingRegressor(base_estimator=None, bootstrap=True, bootstrap_features=False,
+                 max_features=0.925, max_samples=1.0, n_estimators=175,
+                 n_jobs=None, oob_score=True, random_state=10, verbose=0,
+                 warm_start=False)
+                 
+After some testing with our API, we are happy with the results and the API. Both the manual and online way work rather well. We noticed that there's not much overfitting done on the data : From the conclusions we drew in the "Data exploration" part (cf powerpoint), it seems to be present in our results. For example, lowering the resolution takes less time than raising it. The influence of the number of i,p,b frames aswell as the bitrate can be seen too (compare the two results we got from the manual and online versions -> cf final part in the powerpoint).
