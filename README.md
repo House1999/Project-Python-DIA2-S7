@@ -55,6 +55,8 @@ However, if you want to re-run the notebook, please keep the following in mind :
     
 # API guide
 
+Please, before running the API, unzip the pickle file, since it was zipped because its size is too high for github, and it is used in the API so unzip BEFORE running.
+
 You should start by running "python app.py" in a console to get the API working.
 
 For the API you have two choices : 
