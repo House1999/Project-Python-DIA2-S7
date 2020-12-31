@@ -44,13 +44,13 @@ For the notebook, it is simple : we divded it into multiple parts so it is easie
   
 However, if you want to re-run the notebook, please keep the following in mind : 
 
-    1. If you press "run all cells", the notebook will take a really long time to be done. The grid search part takes a really long time to compute.
+  1. If you press "run all cells", the notebook will take a really long time to be done. The grid search part takes a really long time to compute.
     
-    2. If you want to re-run it, we advise you to not re-run the Grid search function (unless you have to) since it is the part that takes a long time.
+  2. If you want to re-run it, we advise you to not re-run the Grid search function (unless you have to) since it is the part that takes a long time.
     
-    3. The pickled model is well over the github 100 MB limit (660 MB) so we divided it into a 2 part zip that you can unzip by pressing "Extract here" on "model part1.rar"
+  3. The pickled model is well over the github 100 MB limit (660 MB) so we divided it into a 2 part zip that you can unzip by pressing "Extract here" on "model part1.rar"
     
-    4. There's a problem with the cell with the Logistic regression model (cell number 34). It will return an error "SVD couldn't converge". You just have to re-run the cell once or twice before it works again. If it doesn't, you can re-run cells 28 to 34 again.
+  4. There's a problem with the cell with the Logistic regression model (cell number 34). It will return an error "SVD couldn't converge". You just have to re-run the cell once or twice before it works again. If it doesn't, you can re-run cells 28 to 34 again.
     
 # API guide
 
@@ -58,9 +58,9 @@ You should start by running "python app.py" in a console to get the API working.
 
 For the API you have two choices : 
 
-    1. Go to request.py and only modify the "request_test" variable following the correct order. Then you run, in a seperate console, "python request.py" and you will get your prediction.
+  1. Go to request.py and only modify the "request_test" variable following the correct order. Then you run, in a seperate console, "python request.py" and you will get your prediction.
     
-    2. Go to "127.0.0.1:5000/" and fill out our form with the test data and press submit. It will redirect you to the result page, showing how long transcoding will take.
+  2. Go to "127.0.0.1:5000/" and fill out our form with the test data and press submit. It will redirect you to the result page, showing how long transcoding will take.
     
 Important note : 
 
