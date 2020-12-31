@@ -4,7 +4,7 @@
 
   In this project we worked with the dataset Online Video Characteristics and Transcoding Time Dataset Data Set. 
   
-  Our goal was to predict the transcoding time using 20 features. We followed the standard approach where we started by exploring the data and plotting some results to understand what we're working with and then do data cleaning / feature engineering when need. The first dataset was used to get those insights and the 2nd dataset (with 168K rows) was used for the training.
+  Our goal was to predict the transcoding time using 20 features. We followed the standard approach where we started by exploring the data and plotting some results to understand what we're working with and then do data cleaning / feature engineering when need. The first dataset was used to get those insights and the 2nd dataset (with 68K rows) was used for the training.
 
 # Content
 
