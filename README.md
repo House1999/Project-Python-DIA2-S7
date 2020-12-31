@@ -61,7 +61,7 @@ For the API you have two choices :
 
   1. Go to request.py and only modify the "request_test" variable following the correct order. Then you run, in a seperate console, "python request.py" and you will get your prediction.
     
-  2. Go to "127.0.0.1:5000/" and fill out our form with the test data and press submit. It will redirect you to the result page, showing how long transcoding will take.
+  2. Go to "127.0.0.1:5000/" and fill out our form with the test data and press submit. It will redirect you to the result page, showing how long transcoding will take. Please make sure to only enter float / int in the form since we didn't handle the errors / an incomplete form.
     
 Important note : 
 
