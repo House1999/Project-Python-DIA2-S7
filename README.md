@@ -55,6 +55,8 @@ However, if you want to re-run the notebook, please keep the following in mind :
     
 # API guide
 
+Please, before running the API, unzip the pickle file, since it was zipped because its size is too high for github, and it is used in the API so unzip BEFORE running.
+
 You should start by running "python app.py" in a console to get the API working.
 
 For the API you have two choices : 
@@ -68,3 +70,19 @@ Important note :
 We noticed that frames should be the sum of i, p and b columns and size should be the sum of i_size, b_size, p_size. So, for the site version, those features were computed automatically in python (no need to fill them out) but in the manual "request.py" version, you have to do it manually, and you have to make sure it is equal to the sum.
 
 Here's a test data that we tried : [180,"flv",480,360,550000,30,250,5000,150,5400,2000,85000,1000,88000,"mpeg4",56000,60,3840,2160,58528].
+
+# Conclusion 
+
+Random Forest seems to have a very slightly higher R2 and slightly lower MSE. However, Bagging has a better grid
+best score. So, since the results are close (and the methods are related after all, bagging is a special case of random
+forest ), we will choose Bagging since it has a higher grid score (on unseen data thanks to oob_score = True), so it is
+less likely to overfit the data.
+
+Now, usually a score > 99% would raise some red flags since the model could have overfit the data and memorized
+the answers.
+
+Usually, we want an accuracy that is high but not very close to 100%. But we think that this is completely normal and
+not due to overfitting just because of the context of our dataset :
+- => Generally, when it comes to transcoding, there's not really any magic behind it. Meaning, that for the same settings we will
+most likely always get the same / very close transcoding time. This differs from predicting the price of a house for example
+(Boston dataset), our dataset here seems log
